@@ -12,8 +12,6 @@
 
 ```
 
-
-```
 **Executive Summary: ELK-Based Observability Platform**
 
 * Built a scalable observability, monitoring, and data pipeline platform using the Elastic Stack (ELK)
@@ -36,4 +34,3 @@
 * Transition to **multi-node Elasticsearch cluster** for scalability and high availability
 * Implement **Fleet management** for centralized agent control and data collection
 * Evolve toward a fully automated, production-grade observability platform
-```
