@@ -36,9 +36,10 @@ TLDR: see full summary below
 * Transition to **multi-node Elasticsearch cluster** for scalability and high availability
 * Implement **Fleet management** for centralized agent control and data collection
 * Implement **Logstash** for ETL and log management.
+* Implement **SIEM** for security monitoring and detection.
 * Evolve toward a fully automated, production-grade observability platform
 ---
-This project delivers a modern, scalable observability and data management platform built on the Elastic Stack (ELK), leveraging Infrastructure as Code (IaC) principles to ensure consistency, repeatability, and operational efficiency.
+This project delivers a modern, scalable observability, security detection, and data management platform built on the Elastic Stack (ELK). Leveraging Infrastructure as Code (IaC) principles to ensure consistency, repeatability, and operational efficiency.
 
 The architecture is designed around a clear separation of concerns: **stateless infrastructure** and **stateful secrets**. Core infrastructure components—including Elasticsearch, Logstash, and Kibana—are provisioned and managed using Terraform, enabling rapid deployment, teardown, and re-creation of environments without configuration drift. Sensitive assets such as TLS certificates and keys are securely maintained outside of Terraform-managed resources and injected at runtime, ensuring persistence across deployments while maintaining security best practices.
 
