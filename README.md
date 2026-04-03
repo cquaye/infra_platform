@@ -43,7 +43,7 @@ This project delivers a modern, scalable observability, security detection, and 
 
 The architecture is designed around a clear separation of concerns: **stateless infrastructure** and **stateful secrets**. Core infrastructure components—including Elasticsearch, Logstash, and Kibana—are provisioned and managed using Terraform, enabling rapid deployment, teardown, and re-creation of environments without configuration drift. Sensitive assets such as TLS certificates and keys are securely maintained outside of Terraform-managed resources and injected at runtime, ensuring persistence across deployments while maintaining security best practices.
 
-The platform enables centralized **observability, monitoring, detection and alerting, and data pipeline management**.This supports ingestion, transformation, and visualization of log and telemetry data. Logstash pipelines and Elasticsearch indexing provide structured data flow, while Kibana delivers actionable insights through dashboards and analytics.
+The platform enables centralized **observability, monitoring, detection and alerting, and data pipeline management**. This supports ingestion, transformation, and visualization of log and telemetry data. Logstash pipelines and Elasticsearch indexing provide structured data flow, while Kibana delivers actionable insights through dashboards and analytics.
 
 A secondary focus of this initiative is the maturation of the CI/CD pipeline. Future enhancements include integrating automation and security tooling such as Jenkins or GitHub Actions for pipeline orchestration, Ansible for configuration management, and Snyk for continuous vulnerability scanning. This will establish a secure, automated software delivery lifecycle with built-in quality and security gates.
 
