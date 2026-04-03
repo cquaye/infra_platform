@@ -1,5 +1,11 @@
 # infra_platform
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?logo=terraform&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?logo=elasticsearch&logoColor=white)
+![Kibana](https://img.shields.io/badge/Kibana-FBC514?logo=kibana&logoColor=black)
+![Security](https://img.shields.io/badge/Secure-TLS-green)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-Automation-blue)
 
 
 
