@@ -12,6 +12,8 @@
 
 ```
 
+---
+
 **Executive Summary: ELK-Based Observability Platform**
 
 TLDR: see full summary below
