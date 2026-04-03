@@ -22,11 +22,18 @@ resource "docker_container" "kibana" {
   mounts {
     type   = "volume"
     source = docker_volume.kibana-data.name
-    target  = "/usr/share/kibana/data"
+    target = "/usr/share/kibana/data"
+  }
+
+  mounts {
+    type = "bind"
+    source = "C:/Users/carlton/Documents/TheoWAF/class7/AWS/Personal_labs/ELK_Stack/kibana/config/certs/"
+    target = "/usr/share/kibana/config/certs/"
+    read_only = true 
   }
 
   env = [
-    "ELASTICSEARCH_HOSTS=http://elasticsearch:9200"
+    "ELASTICSEARCH_HOSTS=https://elasticsearch:9200"
   ]
 
   networks_advanced {

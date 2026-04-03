@@ -11,7 +11,7 @@ resource "docker_container" "filebeat" {
 
   # Map host logs to continer
 
-   mounts {
+  mounts {
     type      = "bind"
     source    = "C:/Users/carlton/Documents/TheoWAF/class7/AWS/Personal_labs/ELK_Stack/filebeat/config/filebeat.yml"
     target    = "/usr/share/filebeat/filebeat.yml"
@@ -20,6 +20,12 @@ resource "docker_container" "filebeat" {
 
   mounts {
     type = "bind"
+    source = "C:/Users/carlton/Documents/TheoWAF/class7/AWS/Personal_labs/ELK_Stack/filebeat/config/certs/"
+    target = "/usr/share/filebeat/config/certs/"
+  }
+
+  mounts {
+    type   = "bind"
     source = "C:/elk-logs"
     target = "/usr/share/filebeat/logs"
   }
@@ -28,7 +34,7 @@ resource "docker_container" "filebeat" {
   # For now, use default config pointing to localhost Elasticsearch
 
   env = [
-    "ELASTICSEARCH_HOSTS=http://elasticsearch:9200"
+    "ELASTICSEARCH_HOSTS=https://elasticsearch:9200"
   ]
 
   command = [

@@ -3,3 +3,13 @@ network.host: 0.0.0.0
 xpack.security.enabled: true
 xpack.security.authc.api_key.enabled: true
 discovery.type: single-node
+xpack.security.transport.ssl.enabled: true
+xpack.security.transport.ssl.verification_mode: certificate
+xpack.security.transport.ssl.keystore.path: certs/elastic-certificates.p12
+xpack.security.transport.ssl.truststore.path: certs/elastic-certificates.p12
+xpack.security.http.ssl.enabled: true
+xpack.security.http.ssl.keystore.path: certs/elastic-certificates.p12
+xpack.security.http.ssl.keystore.password: "beensigned"
+xpack.security.http.ssl.truststore.password: "beensigned"
+xpack.security.transport.ssl.keystore.password: "beensigned"
+xpack.security.transport.ssl.truststore.password: "beensigned"

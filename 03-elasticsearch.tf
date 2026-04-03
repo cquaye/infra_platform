@@ -10,10 +10,10 @@ resource "docker_container" "elasticsearch" {
     external = 9200
   }
 
-  env = [
-    "discovery.type=single-node",
-    "xpack.security.enabled=false"
-  ]
+  # env = [
+  #   "discovery.type=single-node",
+  #   "xpack.security.enabled=false"
+  # ]
 
 
   networks_advanced {
@@ -29,7 +29,13 @@ resource "docker_container" "elasticsearch" {
   mounts {
     target = "/usr/share/elasticsearch/config/elasticsearch.yml"
     source = "C:/Users/carlton/Documents/TheoWAF/class7/AWS/Personal_labs/ELK_Stack/elasticsearch/config/elasticsearch.yml"
-    type = "bind"
+    type   = "bind"
+  }
+
+  mounts {
+    target = "/usr/share/elasticsearch/config/certs"
+    source = "C:/Users/carlton/Documents/TheoWAF/class7/AWS/Personal_labs/ELK_Stack/elasticsearch/config/certs"
+    type   = "bind"
   }
 
 
