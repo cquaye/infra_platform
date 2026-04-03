@@ -35,6 +35,7 @@ TLDR: see full summary below
 
 * Transition to **multi-node Elasticsearch cluster** for scalability and high availability
 * Implement **Fleet management** for centralized agent control and data collection
+* Implement **Logstash** for ETL and log management.
 * Evolve toward a fully automated, production-grade observability platform
 ---
 This project delivers a modern, scalable observability and data management platform built on the Elastic Stack (ELK), leveraging Infrastructure as Code (IaC) principles to ensure consistency, repeatability, and operational efficiency.
